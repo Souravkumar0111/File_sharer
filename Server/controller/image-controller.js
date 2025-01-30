@@ -8,7 +8,7 @@ export const uploadImage=async(request,response)=>{
     try{
     const file= await  File.create(fileObj);
     console.log(file);
-    response.status(200).json({path:`http://localhost:3000/file/${file._id}`})
+    response.status(200).json({path:`https://file-sharer-o1pv.onrender.com/file/${file._id}`})
     }
     catch(error){
     console.log(error.message);
